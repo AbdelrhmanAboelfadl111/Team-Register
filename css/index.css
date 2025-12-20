@@ -1,0 +1,115 @@
+#Home .homeImg {
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  width: 150px;
+}
+#Home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../imgs/ChatGPT Image Dec 20, 2025, 04_43_19 PM.png");
+  position: relative;
+}
+#Home::before {
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.557);
+  border: 2px solid transparent;
+  opacity: 1;
+  backdrop-filter: blur(2px);
+}
+#Home .container {
+  position: relative;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+#Home .container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  background-color: rgba(31, 31, 31, 0.564);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 30px;
+}
+#Home .container .box form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Home .container .box form .con {
+  position: relative;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+}
+#Home .container .box form .con:first-child {
+  margin-bottom: 20px;
+}
+#Home .container .box form .con:first-child h2 {
+  color: white;
+}
+#Home .container .box form .con:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+#Home .container .box form .con:nth-of-type(3) {
+  margin-bottom: 20px;
+}
+#Home .container .box form .con.btnCon {
+  margin-top: 10px;
+}
+#Home .container .box form .con.btnCon input {
+  border: 2px solid rgb(100, 40, 0);
+  border-radius: 5px;
+  position: relative;
+}
+#Home .container .box form .con img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: initial;
+  left: initial;
+  width: 35px;
+}
+#Home .container .box form .con input {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid rgb(100, 40, 0);
+  color: white;
+  padding: 5px 10px;
+  transition: all 0.5s;
+}
+#Home .container .box form .con input::placeholder {
+  transition: all 0.5s;
+}
+#Home .container .box form .con input:focus {
+  border-bottom: 2px solid rgb(255, 102, 0);
+  outline: 0;
+}
+#Home .container .box form .con input:focus::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=index.css.map */

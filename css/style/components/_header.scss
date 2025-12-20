@@ -1,0 +1,81 @@
+@use "../abstracts" as *;
+#Home{
+    .homeImg{
+        @include Position($type: absolute, $t: 0, $l: 0);
+        width:150px;
+    }
+    @include bgImg();
+    @include flexCenter();
+    background-image: url("../imgs/ChatGPT\ Image\ Dec\ 20\,\ 2025\,\ 04_43_19\ PM.png");
+    position: relative;
+    &::before{
+        @include Position($type: absolute, $t: 0, $l: 0);
+        @include shapeNav($w: 100%, $h: 100%, $color:rgba(0, 0, 0, 0.557), $opacity: 1, $border-color:transparent);
+        backdrop-filter: blur(2px);
+    }
+    .container{
+        position: relative;
+        @include flexCenter();
+        .box{
+            @include flexCenter(column);
+            width: 350px;
+            background-color: rgba(31, 31, 31, 0.564);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 20px 30px;
+            form{
+                @include flexCenter(column);
+                .con{
+                    position: relative;
+                    @include flexCenter();
+                    &:first-child{
+                        margin-bottom: 20px;
+                        h2{
+                            color: white;
+                        }
+                    }
+                    &:nth-of-type(2){
+                        margin-bottom: 20px;
+                    }
+                    &:nth-of-type(3){
+                        margin-bottom: 20px;
+                    }
+                    &.btnCon{
+                        margin-top: 10px;
+                        input{
+                            border: 2px solid rgb(100, 40, 0);
+                            border-radius: 5px;
+                            position: relative;
+                        }
+                    }
+                    img{
+                        @include Position($type: absolute, $t: 0, $r: 0);
+                        width: 35px;
+                    }
+                    input{
+                        width: 100%;
+                        background-color: transparent;
+                        border: 0;
+                        border-bottom: 2px solid rgb(100, 40, 0);
+                        color: white;
+                        padding: 5px 10px;
+                        transition: all 0.5s;
+                        
+                        &::placeholder {
+                            transition: all 0.5s;
+                        }
+                        &:focus{
+                            border-bottom: 2px solid rgb(255, 102, 0);
+                            outline: 0;
+                            &::placeholder {
+                                color: rgb(255, 255, 255);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
